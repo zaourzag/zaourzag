@@ -13,3 +13,9 @@ jobs:
       - uses: samip5/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+          plugin_isocalendar: yes 
+          plugin_languages: yes
+          plugin_stars: yes
+          use_prebuilt_image: yes
+          config_timezone: Europe/Amsterdam
+          config_order: base, isocalendar, languages, stars
